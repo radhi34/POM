@@ -1,0 +1,10 @@
+base\TestBase.class
+pages\LoginPage.class
+pages\ContactsPage.class
+pages\HomePage.class
+pages\SignUpPage.class
+utilities\WebEventListener.class
+utilities\Xls_Reader.class
+pages\DealsPage.class
+ExtentReportListener\ExtentReportListener.class
+utilities\TestUtil.class
