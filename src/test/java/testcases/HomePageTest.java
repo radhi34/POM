@@ -23,7 +23,7 @@ public class HomePageTest extends TestBase {
 	public HomePageTest() throws IOException {
 		super();
 	}
-	
+
 	@BeforeMethod
 	public void setUp() throws IOException {
 		initialization();
@@ -32,7 +32,7 @@ public class HomePageTest extends TestBase {
 		homepage = loginpage.login(prop.getProperty("username"),prop.getProperty("password"));
 		
 	}
-	
+
 	@Test(priority=1)
 	public void verifyHomepageTitle() {
 		String homepageTitle = homepage.verifyHomePageTitle();
