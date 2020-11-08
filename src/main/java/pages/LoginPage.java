@@ -20,6 +20,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import base.TestBase;
+import io.qameta.allure.Step;
 
 public class LoginPage extends TestBase {
 	
@@ -36,7 +37,7 @@ public class LoginPage extends TestBase {
 	
 	@FindBy(xpath="//a[contains(text(),'Sign Up')]")
 	WebElement signUpBtn;
-	
+
 	@FindBy(xpath="//img[contains(@class,'img-responsive')]")
 	WebElement Logo;
 	
@@ -46,14 +47,17 @@ public class LoginPage extends TestBase {
 		PageFactory.initElements(driver, this);
 		
 	}
+	@Step("getting loginpage title")
 	public String validateLoginPageTitle() {
 		return driver.getTitle();
 	}
 	
+	@Step("validating image")
 	public boolean validateImage() {
 		return Logo.isDisplayed();
 	}
-	
+
+	@Step("login with username: {0} and password: {1}")
 	public HomePage login(String un, String pwd ) throws IOException{
 		username.sendKeys(un);
 		password.sendKeys(pwd);

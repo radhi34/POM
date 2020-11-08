@@ -3,6 +3,7 @@
 <suite name="Failed suite [FREE CRM Application Test Automation Test Suite]" guice-stage="DEVELOPMENT">
   <listeners>
     <listener class-name="ExtentReportListener.ExtentReportListener"/>
+    <listener class-name="Analyzer.Transformer"/>
   </listeners>
   <test name="Test(failed)">
     <classes>
@@ -15,7 +16,7 @@
       </class> <!-- testcases.ContactsPageTest -->
       <class name="testcases.HomePageTest">
         <methods>
-          <include name="verifyContactLink"/>
+          <include name="verifyHomepageTitle"/>
           <include name="setUp"/>
           <include name="tearDown"/>
         </methods>

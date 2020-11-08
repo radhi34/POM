@@ -5,5 +5,8 @@ C:\Selenium_Workspace\POM_Project\src\main\java\utilities\WebEventListener.java
 C:\Selenium_Workspace\POM_Project\src\main\java\ExtentReportListener\ExtentReportListener.java
 C:\Selenium_Workspace\POM_Project\src\main\java\pages\DealsPage.java
 C:\Selenium_Workspace\POM_Project\src\main\java\pages\SignUpPage.java
+C:\Selenium_Workspace\POM_Project\src\main\java\Analyzer\RetryAnalyzer.java
+C:\Selenium_Workspace\POM_Project\src\main\java\Analyzer\Transformer.java
 C:\Selenium_Workspace\POM_Project\src\main\java\pages\ContactsPage.java
+C:\Selenium_Workspace\POM_Project\src\main\java\utilities\TestAllureReportListner.java
 C:\Selenium_Workspace\POM_Project\src\main\java\utilities\TestUtil.java

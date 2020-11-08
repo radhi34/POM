@@ -22,6 +22,7 @@ public class TestBase {
 	public static Properties prop;
 	public  static EventFiringWebDriver e_driver;
 	public static WebEventListener eventListener;
+	public static ThreadLocal<WebDriver> tdriver = new ThreadLocal<WebDriver>();
 	
 	public TestBase() throws IOException {
 		
@@ -31,7 +32,7 @@ public class TestBase {
 		
 	}
 	
-	public static void initialization() throws IOException {
+	public static WebDriver initialization() throws IOException {
 		String browsername = prop.getProperty("browser");
 		
 		if(browsername.equals("Firefox")) {
@@ -47,6 +48,8 @@ public class TestBase {
 			driver = new ChromeDriver();
 			}
 		
+	
+		
 			
 		e_driver = new EventFiringWebDriver(driver);
 		// Now create object of EventListerHandler to register it with EventFiringWebDriver
@@ -60,9 +63,15 @@ public class TestBase {
 		driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
 		
 		driver.get(prop.getProperty("url"));
+		tdriver.set(driver);
+		return getDriver();
 		
 		}
+
 	
+	public static synchronized WebDriver getDriver() {
+		return tdriver.get();
+	}
 		
 	}
 

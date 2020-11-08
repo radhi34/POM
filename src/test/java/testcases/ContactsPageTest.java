@@ -29,7 +29,6 @@ public class ContactsPageTest extends TestBase {
 		super();
 		
 	}
-
 	@BeforeMethod
 	public void setUp() throws IOException {
 		initialization();

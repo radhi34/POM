@@ -6,6 +6,7 @@ import java.io.IOException;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import base.TestBase;
@@ -13,7 +14,9 @@ import pages.ContactsPage;
 import pages.DealsPage;
 import pages.HomePage;
 import pages.LoginPage;
+import utilities.TestAllureReportListner;
 
+@Listeners({TestAllureReportListner.class})
 public class HomePageTest extends TestBase {
 	LoginPage loginpage;
 	HomePage homepage;
@@ -36,7 +39,7 @@ public class HomePageTest extends TestBase {
 	@Test(priority=1)
 	public void verifyHomepageTitle() {
 		String homepageTitle = homepage.verifyHomePageTitle();
-		Assert.assertEquals(homepageTitle, "CRMPRO", "HomePAge title not match");
+		Assert.assertEquals(homepageTitle, "CRMPR", "HomePAge title not match");
 	}
 	
 	@Test(priority=2)

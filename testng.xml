@@ -5,6 +5,8 @@
 
 	<listeners>
 		<listener class-name="ExtentReportListener.ExtentReportListener" />
+		<listener class-name="Analyzer.Transformer" />
+		<listener class-name="utilities.TestAllureReportListner" />
 	</listeners>
 	
   <test name="Test">
@@ -12,7 +14,7 @@
      <class name="testcases.LoginPageTest"/>
       <class name="testcases.HomePageTest"/>
       
-        <class name="testcases.ContactsPageTest"/>
+<!--         <class name="testcases.ContactsPageTest"/> -->
          
     </classes>
   </test> <!-- Test -->

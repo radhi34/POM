@@ -1,49 +1,294 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="11" passed="7" failed="2" skipped="2">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-11-07T22:06:12Z" name="Default suite" finished-at="2020-11-07T22:06:50Z" duration-ms="37972">
+  <suite started-at="2020-11-07T23:58:46Z" name="FREE CRM Application Test Automation Test Suite" finished-at="2020-11-08T00:00:54Z" duration-ms="127973">
     <groups>
     </groups>
-    <test started-at="2020-11-07T22:06:12Z" name="Default test" finished-at="2020-11-07T22:06:50Z" duration-ms="37972">
-      <class name="testcases.HomePageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.HomePageTest@23f7d05d]" started-at="2020-11-07T17:06:12Z" name="setUp" finished-at="2020-11-07T17:06:22Z" duration-ms="10551" status="PASS">
+    <test started-at="2020-11-07T23:58:46Z" name="Test" finished-at="2020-11-08T00:00:54Z" duration-ms="127973">
+      <class name="testcases.ContactsPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.ContactsPageTest@38c5cc4c]" started-at="2020-11-07T18:59:31Z" name="setUp" finished-at="2020-11-07T18:59:42Z" duration-ms="11320" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyHomepageTitle()[pri:1, instance:testcases.HomePageTest@23f7d05d]" started-at="2020-11-07T17:06:22Z" name="verifyHomepageTitle" finished-at="2020-11-07T17:06:22Z" duration-ms="38" status="PASS">
+        <test-method signature="verifyContactPAgeLabel()[pri:1, instance:testcases.ContactsPageTest@38c5cc4c]" started-at="2020-11-07T18:59:42Z" name="verifyContactPAgeLabel" finished-at="2020-11-07T18:59:42Z" duration-ms="95" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyContactPAgeLabel -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testcases.ContactsPageTest@38c5cc4c]" started-at="2020-11-07T18:59:42Z" name="teardown" finished-at="2020-11-07T18:59:43Z" duration-ms="973" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.ContactsPageTest@38c5cc4c]" started-at="2020-11-07T19:00:16Z" name="setUp" finished-at="2020-11-07T19:00:27Z" duration-ms="11408" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="selectcontactTest()[pri:2, instance:testcases.ContactsPageTest@38c5cc4c]" started-at="2020-11-07T19:00:27Z" name="selectcontactTest" finished-at="2020-11-07T19:00:27Z" duration-ms="198" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectcontactTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testcases.ContactsPageTest@38c5cc4c]" started-at="2020-11-07T19:00:27Z" name="teardown" finished-at="2020-11-07T19:00:28Z" duration-ms="810" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method signature="validateCreateNewContact(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:testcases.ContactsPageTest@38c5cc4c]" started-at="2020-11-07T19:00:54Z" name="validateCreateNewContact" data-provider="getCRMTestData" finished-at="2020-11-07T19:00:54Z" duration-ms="0" status="FAIL">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Method public void testcases.ContactsPageTest.validateCreateNewContact(java.lang.String,java.lang.String,java.lang.String,java.lang.String) requires a @DataProvider named : getCRMTestData]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Method public void testcases.ContactsPageTest.validateCreateNewContact(java.lang.String,java.lang.String,java.lang.String,java.lang.String) requires a @DataProvider named : getCRMTestData
+	at org.testng.internal.Parameters.findDataProvider(Parameters.java:336)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:498)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1308)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:1036)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1126)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCreateNewContact -->
+      </class> <!-- testcases.ContactsPageTest -->
+      <class name="testcases.HomePageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.HomePageTest@223f3642]" started-at="2020-11-07T18:58:53Z" name="setUp" finished-at="2020-11-07T18:59:05Z" duration-ms="11754" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyHomepageTitle()[pri:1, instance:testcases.HomePageTest@223f3642]" started-at="2020-11-07T18:59:05Z" name="verifyHomepageTitle" finished-at="2020-11-07T18:59:05Z" duration-ms="26" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[HomePAge title not match expected [CRMPR] but found [CRMPRO]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: HomePAge title not match expected [CRMPR] but found [CRMPRO]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
+	at org.testng.Assert.assertEquals(Assert.java:115)
+	at org.testng.Assert.assertEquals(Assert.java:189)
+	at testcases.HomePageTest.verifyHomepageTitle(HomePageTest.java:39)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyHomepageTitle -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.HomePageTest@23f7d05d]" started-at="2020-11-07T17:06:22Z" name="tearDown" finished-at="2020-11-07T17:06:23Z" duration-ms="1082" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.HomePageTest@223f3642]" started-at="2020-11-07T18:59:05Z" name="tearDown" finished-at="2020-11-07T18:59:07Z" duration-ms="1575" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.HomePageTest@23f7d05d]" started-at="2020-11-07T17:06:23Z" name="setUp" finished-at="2020-11-07T17:06:33Z" duration-ms="9287" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.HomePageTest@223f3642]" started-at="2020-11-07T18:59:07Z" name="setUp" finished-at="2020-11-07T18:59:16Z" duration-ms="9541" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyingUserName()[pri:2, instance:testcases.HomePageTest@23f7d05d]" started-at="2020-11-07T17:06:33Z" name="verifyingUserName" finished-at="2020-11-07T17:06:33Z" duration-ms="496" status="PASS">
+        <test-method signature="verifyHomepageTitle()[pri:1, instance:testcases.HomePageTest@223f3642]" started-at="2020-11-07T18:59:16Z" name="verifyHomepageTitle" finished-at="2020-11-07T18:59:16Z" duration-ms="28" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[HomePAge title not match expected [CRMPR] but found [CRMPRO]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: HomePAge title not match expected [CRMPR] but found [CRMPRO]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
+	at org.testng.Assert.assertEquals(Assert.java:115)
+	at org.testng.Assert.assertEquals(Assert.java:189)
+	at testcases.HomePageTest.verifyHomepageTitle(HomePageTest.java:39)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.retryFailed(Invoker.java:1014)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1215)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomepageTitle -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.HomePageTest@223f3642]" started-at="2020-11-07T18:59:16Z" name="tearDown" finished-at="2020-11-07T18:59:17Z" duration-ms="1021" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.HomePageTest@223f3642]" started-at="2020-11-07T18:59:17Z" name="setUp" finished-at="2020-11-07T18:59:30Z" duration-ms="12601" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyHomepageTitle()[pri:1, instance:testcases.HomePageTest@223f3642]" started-at="2020-11-07T18:59:30Z" name="verifyHomepageTitle" finished-at="2020-11-07T18:59:30Z" duration-ms="23" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[HomePAge title not match expected [CRMPR] but found [CRMPRO]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: HomePAge title not match expected [CRMPR] but found [CRMPRO]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
+	at org.testng.Assert.assertEquals(Assert.java:115)
+	at org.testng.Assert.assertEquals(Assert.java:189)
+	at testcases.HomePageTest.verifyHomepageTitle(HomePageTest.java:39)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.retryFailed(Invoker.java:1014)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1215)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomepageTitle -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.HomePageTest@223f3642]" started-at="2020-11-07T18:59:30Z" name="tearDown" finished-at="2020-11-07T18:59:31Z" duration-ms="992" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.HomePageTest@223f3642]" started-at="2020-11-07T18:59:51Z" name="setUp" finished-at="2020-11-07T19:00:14Z" duration-ms="22921" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyingUserName()[pri:2, instance:testcases.HomePageTest@223f3642]" started-at="2020-11-07T19:00:14Z" name="verifyingUserName" finished-at="2020-11-07T19:00:14Z" duration-ms="264" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyingUserName -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.HomePageTest@23f7d05d]" started-at="2020-11-07T17:06:33Z" name="tearDown" finished-at="2020-11-07T17:06:35Z" duration-ms="1612" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.HomePageTest@223f3642]" started-at="2020-11-07T19:00:14Z" name="tearDown" finished-at="2020-11-07T19:00:16Z" duration-ms="1394" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.HomePageTest@23f7d05d]" started-at="2020-11-07T17:06:35Z" name="setUp" finished-at="2020-11-07T17:06:47Z" duration-ms="12104" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.HomePageTest@223f3642]" started-at="2020-11-07T19:00:39Z" name="setUp" finished-at="2020-11-07T19:00:51Z" duration-ms="11703" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyContactLink()[pri:3, instance:testcases.HomePageTest@23f7d05d]" started-at="2020-11-07T17:06:47Z" name="verifyContactLink" finished-at="2020-11-07T17:06:49Z" duration-ms="1864" status="PASS">
+        <test-method signature="verifyContactLink()[pri:3, instance:testcases.HomePageTest@223f3642]" started-at="2020-11-07T19:00:51Z" name="verifyContactLink" finished-at="2020-11-07T19:00:53Z" duration-ms="1722" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyContactLink -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.HomePageTest@23f7d05d]" started-at="2020-11-07T17:06:49Z" name="tearDown" finished-at="2020-11-07T17:06:50Z" duration-ms="893" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.HomePageTest@223f3642]" started-at="2020-11-07T19:00:53Z" name="tearDown" finished-at="2020-11-07T19:00:54Z" duration-ms="850" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testcases.HomePageTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="testcases.LoginPageTest">
+        <test-method is-config="true" signature="SetUP()[pri:0, instance:testcases.LoginPageTest@5db250b4]" started-at="2020-11-07T18:58:46Z" name="SetUP" finished-at="2020-11-07T18:58:52Z" duration-ms="6582" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUP -->
+        <test-method signature="loginPageTitleTest()[pri:1, instance:testcases.LoginPageTest@5db250b4]" started-at="2020-11-07T18:58:52Z" name="loginPageTitleTest" finished-at="2020-11-07T18:58:52Z" duration-ms="115" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginPageTitleTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.LoginPageTest@5db250b4]" started-at="2020-11-07T18:58:52Z" name="tearDown" finished-at="2020-11-07T18:58:53Z" duration-ms="962" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="SetUP()[pri:0, instance:testcases.LoginPageTest@5db250b4]" started-at="2020-11-07T18:59:43Z" name="SetUP" finished-at="2020-11-07T18:59:50Z" duration-ms="6839" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUP -->
+        <test-method signature="LogoImage()[pri:2, instance:testcases.LoginPageTest@5db250b4]" started-at="2020-11-07T18:59:50Z" name="LogoImage" finished-at="2020-11-07T18:59:50Z" duration-ms="174" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LogoImage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.LoginPageTest@5db250b4]" started-at="2020-11-07T18:59:50Z" name="tearDown" finished-at="2020-11-07T18:59:51Z" duration-ms="872" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="SetUP()[pri:0, instance:testcases.LoginPageTest@5db250b4]" started-at="2020-11-07T19:00:28Z" name="SetUP" finished-at="2020-11-07T19:00:35Z" duration-ms="6576" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUP -->
+        <test-method signature="loginTest()[pri:3, instance:testcases.LoginPageTest@5db250b4]" started-at="2020-11-07T19:00:35Z" name="loginTest" finished-at="2020-11-07T19:00:39Z" duration-ms="3679" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.LoginPageTest@5db250b4]" started-at="2020-11-07T19:00:39Z" name="tearDown" finished-at="2020-11-07T19:00:39Z" duration-ms="866" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.LoginPageTest -->
+    </test> <!-- Test -->
+  </suite> <!-- FREE CRM Application Test Automation Test Suite -->
 </testng-results>

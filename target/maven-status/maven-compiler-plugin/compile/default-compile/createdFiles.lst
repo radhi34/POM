@@ -1,9 +1,12 @@
+utilities\TestAllureReportListner.class
 base\TestBase.class
 pages\LoginPage.class
 pages\ContactsPage.class
 pages\HomePage.class
-pages\SignUpPage.class
-utilities\WebEventListener.class
+Analyzer\RetryAnalyzer.class
 pages\DealsPage.class
 ExtentReportListener\ExtentReportListener.class
+Analyzer\Transformer.class
+pages\SignUpPage.class
+utilities\WebEventListener.class
 utilities\TestUtil.class

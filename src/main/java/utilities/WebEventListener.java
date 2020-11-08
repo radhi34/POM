@@ -27,7 +27,6 @@ public class WebEventListener extends TestBase implements WebDriverEventListener
 		super();
 		// TODO Auto-generated constructor stub
 	}
-
 	public void beforeNavigateTo(String url, WebDriver driver) {
 		System.out.println("Before navigating to: '" + url + "'");
 	}
